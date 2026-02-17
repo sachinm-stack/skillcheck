@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkillMatch | Compare Skills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="skill.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <div class="logo">SkillMatch</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="compare.html" class="active">Compare</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>Skill Comparison Tool</h1>
+        <p>Check how well your skills match your desired job role</p>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container">
+
+        <!-- Input Section -->
+        <section class="input-section">
+            <input type="text" id="jobRole" 
+                placeholder="Enter Job Role (e.g. frontend developer)">
+
+            <input type="text" id="userSkills" 
+                placeholder="Enter Your Skills (comma separated)">
+
+            <button onclick="compareSkills()">Compare Skills</button>
+        </section>
+
+        <!-- Result Section -->
+        <section id="resultSection">
+
+            <h2 id="percentageText"></h2>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <div class="result-lists">
+                <div>
+                    <h3>Matched Skills</h3>
+                    <ul id="matchedSkills"></ul>
+                </div>
+
+                <div>
+                    <h3>Missing Skills</h3>
+                    <ul id="missingSkills"></ul>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER (Optional but Professional) ================= -->
+    <footer style="text-align:center; padding:20px; color:#fff;">
+        <p>© 2026 SkillMatch | Built for Learning Full Stack Development</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="skill.js"></script>
+
+</body>
+</html>
